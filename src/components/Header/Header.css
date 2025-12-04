@@ -1,0 +1,110 @@
+@import url("../../index.css");
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  max-width: 100vw;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: transparent;
+  backdrop-filter: blur(5px); */
+  padding: 1rem 7rem;
+  background-color: #efefef;
+  box-shadow: 0 15px 15px #dedede;
+}
+
+.left-side {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 0.2rem;
+  align-items: center;
+  cursor: pointer;
+}
+.left-side .logo {
+  font-size: 2rem;
+  color: #7F73F5;
+}
+
+.left-side .title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.left-side .title h3 {
+  color: var(--text);
+  font-size: 1.5rem;
+}
+.left-side .title p {
+  font-size: 0.9rem;
+  color: gray;
+}
+
+.logout {
+  border: none;
+  border-radius: 5px;
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 400;
+  background-color: #7F73F5;
+  color: white;
+  transition: 150ms background-color ease-out;
+}
+.logout:hover {
+  background-color: #6f63d2;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--text);
+}
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-right: 1rem;
+  padding: 5px 10px;
+  border-radius: 8px;
+  background-color: #e2e2e2;
+  color: #2E2E2E;
+  transition: 100ms background-color ease-out;
+  cursor: pointer;
+}
+.profile:hover {
+  background-color: #d4d3d3;
+}
+.user-info i {
+  font-size: 2rem;
+}
+.user-info p {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+
+/* middle side */
+.middle-side {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+.middle-side h3 {
+  color: #2E2E2E;
+  font-size: 1.15rem;
+  font-weight: 500;
+  font-family: "Manrope", sans-serif;
+  cursor: pointer;
+  transition: 100ms color ease-out;
+  padding: 8px 10px;
+  border-radius: 10px;
+  transition: 100ms background-color ease-out;
+}
+.middle-side h3:hover {
+  background-color: #e6e6e6;
+}

@@ -1,0 +1,110 @@
+@import "../../index.css";
+
+.latest-container {
+  padding: 50px;
+  background-color: #e8e8e8;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.latest-title {
+  color: #1d1c1c;
+  font-size: 1.9rem;
+  font-weight: 600;
+}
+
+.latest-desc {
+  color: #383838;
+  font-size: 1.1rem;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.latest-grid {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 10px 5vw;
+}
+
+.latest-card {
+  width: min-content;
+  background: white;
+  border-radius: 14px;
+  padding: 15px;
+  transition: all 150ms;
+  white-space: nowrap;
+  text-align: left;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+  margin-bottom: .7rem;
+  box-shadow: 0 5px 15px #bab9b9;
+  
+  &:hover {
+    box-shadow: 0 5px 15px #9a9999;
+  }
+}
+
+.latest-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--border);
+}
+
+.latest-img {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 5px;
+  border: 1px solid #c9c9c9;
+}
+
+.latest-img img {
+  height: 100%;
+  object-fit: contain;
+}
+
+.latest-card h3 {
+  font-size: 1.1rem;
+}
+
+.latest-body {
+  width: 100%;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.loc {
+  font-size: 0.85rem;
+  margin-top: 3px;
+  opacity: 0.8  ;
+}
+
+.tag {
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.tag.lost {
+  background: rgba(255, 0, 0, 0.2);
+  color: #ff3f3f;
+}
+
+.tag.found {
+  background: rgba(0, 175, 0, 0.2);
+  color: #00b100;
+}

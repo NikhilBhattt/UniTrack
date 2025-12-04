@@ -1,0 +1,23 @@
+.loading {
+    height: 80px;
+    margin: auto;
+    place-content: center;
+    font-size: 1.3rem;
+    font-weight: 500;
+    display: flex;
+    gap: .8rem;
+    align-items: center;
+}
+.loading .loading-spinner {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border: 5px solid #5f5e5e;
+    border-radius: 50%;
+    border-left-color: transparent;
+    animation: spin 600ms infinite linear;
+}
+@keyframes spin {
+    from {rotate: 0deg;}
+    to {rotate: 360deg;}
+}

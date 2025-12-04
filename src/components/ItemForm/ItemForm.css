@@ -1,0 +1,168 @@
+.form-container {
+  width: 100%;
+  height: 85vh;
+  padding: 2rem 5vw;
+  border-radius: 10px;
+  background-color: var(--bg-dark);
+}
+
+.form-title {
+  font-size: 2rem;
+  color: var(--text);
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-right: 7rem;
+  font-weight: 500;
+}
+
+.item-form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.form-left {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 0 5vw;
+}
+
+
+.item-form label {
+  color: var(--text);
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+.item-form label span {
+  color: var(--text-muted);
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+.item-form input,
+textarea {
+  width: 100%;
+  height: 2.5rem;
+  background-color: var(--bg-dark);
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #1d1c1c;
+  margin-bottom: 1.6rem;
+}
+
+.item-form textarea {
+  resize: none;
+  height: auto;
+  margin-bottom: 1.2rem;
+}
+.item-form textarea::placeholder {
+  font-size: 1.2rem;
+}
+
+.item-form .required {
+  color: red;
+  font-size: 1.1rem;
+}
+
+.item-form input[type="date"], 
+.item-form input[type="time"] {
+  color: #1d1c1cb1;
+}
+.item-form input[type="date"]:focus, 
+.item-form input[type="time"]:focus {
+  color: #1d1c1cfc;
+}
+
+
+.form-right {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.form-container .submit-btn {
+  margin: 15px auto 0 0 ;
+  padding: 12px 15px;
+  font-size: 18px;
+  background: #7b6ef8;
+  color: var(--bg-dark);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+.submit-btn:hover {
+  background: #5176e5;
+}
+
+.submit-btn.submitting {
+  cursor: wait;
+}
+
+/* My own */
+
+.form-right {
+  padding: 0 5vw 0 2vw;
+}
+.form-right span {
+  margin-left: 5px;
+}
+
+.date-time-container {
+  display: flex;
+  gap: 5px;
+}
+.date-input {
+  width: 50%;
+}
+
+.time-input {
+  width: 30%;
+  color: var(--text);
+}
+
+.form-right input[type="file"] {
+  display: none;
+}
+
+.upload-btn {
+  padding: 12px 15px;
+  margin-right: auto;
+  background-color: #7F73F5;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: background-color 100ms ease-in-out;
+  &:hover {
+    background-color: #6858f0;
+  }
+}
+
+.image-preview {
+  width: 50%;
+  max-height: 300px;
+  object-fit: contain;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  margin-bottom: 8px;
+}
+
+
+.status-select {
+  width: 30%;
+  padding: 10px 15px 10px 10px;
+  margin-top: 5px;
+  background: var(--bg-dark);
+  color: #1d1c1c;
+  font-size: 1.1rem;
+  border: 1px solid #444;
+  border-radius: 6px;
+}

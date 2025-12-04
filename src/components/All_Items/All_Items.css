@@ -1,0 +1,134 @@
+@import url("../../index.css");
+
+.lost-found-container {
+  max-width: 60%;
+  padding: 40px;
+  padding-bottom: 10px;
+  text-align: center;
+  margin-left: 5vw;
+  font-family: "Poppins", sans-serif;
+  color: var(--text);
+}
+
+.container-title {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.features {
+  margin-bottom: 28px;
+  padding-left: 20px;
+}
+
+.features li {
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.button-group {
+  display: flex;
+  gap: 18px;
+  margin-top: 10px;
+}
+
+.info-section {
+  width: 100%;
+  padding: 0 12vw;
+}
+
+.info-text {
+  font-size: 16px;
+  color: gray;
+}
+.info-title {
+  color: var(--text);
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-top: 1rem;
+  margin-bottom: 12px;
+}
+
+.items-options {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 20px 170px;
+  gap: 150px;
+}
+.items-search {
+  display: flex;
+  align-items: center;
+}
+.items-search input {
+  padding: 10px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border: 1px solid gray;
+  outline: none;
+  font-size: 1.1rem;  
+}
+.items-options .items-search button {
+  padding: 10px;
+  font-size: 1.1rem;
+  color: rgb(33, 33, 33);
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  outline: none;
+  border: 1px solid gray;
+  cursor: pointer;
+  &:hover {
+    background-color: rgb(234, 233, 233);
+  }
+}
+
+.items-group-btns {
+  width: fit-content;
+  border-radius: 15px;
+  background-color: #efefef;
+  border: 2px solid rgb(193, 192, 192);
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.items-group-btns .btn1,
+.items-group-btns .btn2 {
+  padding: 1rem 1.5rem;
+  outline: none;
+  cursor: pointer;
+  color: #1d1c1c;
+  font-size: 1.1rem;
+  font-weight: 500;
+  border: none;
+}
+.btn2 {
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+.btn1 {
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.btn1.active {
+  color: white;
+  border-radius: 15px;
+  background-color: var(--danger);
+}
+.btn2.active {
+  color: white;
+  border-radius: 15px;
+  background-color: #2d8b56;
+}
+.items-container {
+  min-height: 20vh;
+  padding: 0 8vw;
+}
+.items-grid {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 10px 5vw;
+}
