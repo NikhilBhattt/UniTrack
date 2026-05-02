@@ -38,7 +38,6 @@ function Home() {
         <aside className="right-container">
           <img
             className="logo-banner"
-            // src="./src/assets/UniTrack-banner.png"
             src="./src/assets/logo-banner.png"
             alt="logo-banner"
           />

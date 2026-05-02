@@ -7,10 +7,8 @@ import ItemForm from "./components/ItemForm/ItemForm";
 import ProtectedRoute from "./ProtectedRoute";
 import { auth } from "./config/firebase";
 import { BrowserRouter , Routes, Route} from "react-router-dom";
-import useLenis from "./Lenis";
 
 function App() {
-  // useLenis();
   return (
     <BrowserRouter>
       <Routes>
